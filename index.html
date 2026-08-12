@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiP[...]" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/overrides.css">
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -22,120 +23,108 @@
 
   <header class="hero" id="home">
     <div class="page-shell hero-shell">
-      <div class="eyebrow"><span class="status-dot"></span> Available for meaningful backend challenges</div>
+      <div class="eyebrow"><span class="status-dot"></span> Java Backend Engineer · 3+ years experience</div>
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="intro">Hi, I’m</p>
           <h1>Pramod <span>Patil.</span></h1>
-          <p class="hero-role">Java Backend Engineer <span>/</span> AI &amp; Data Systems</p>
-          <p class="hero-summary">I build dependable backend systems where <strong>Java, data, and Generative AI</strong> meet — turning complex questions into performant, production-ready exper[...]
+          <p class="hero-role">Java Backend Engineer <span>/</span> AI-Powered Backend Systems</p>
+          <p class="hero-summary">I build <strong>Java &amp; Spring Boot backend systems</strong> behind production products — designing APIs, solving complex SQL and database problems, and maki[...]
           </p>
+          <div class="hero-tech" aria-label="Core technologies">
+            <span><i class="fab fa-java"></i> Java</span><span><i class="fas fa-leaf"></i> Spring Boot</span><span><i class="fas fa-server"></i> Microservices</span><span><i class="fas fa-database[...]
+          </div>
           <div class="hero-actions">
-            <a class="button button-primary" href="#about" data-section="about">Explore my work <i class="fas fa-arrow-down" aria-hidden="true"></i></a>
-            <a class="button button-secondary" href="#contact" data-section="contact">Let’s connect <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+            <a class="button button-primary" href="#about">View my work <i class="fas fa-arrow-right"></i></a>
+            <a class="button button-secondary" href="#contact">Get in touch <i class="far fa-paper-plane"></i></a>
           </div>
           <div class="hero-proof" aria-label="Professional highlights">
-            <div><strong>10+</strong><span>databases supported</span></div>
-            <div><strong>~30%</strong><span>query response improvement</span></div>
-            <div><strong>30+</strong><span>critical issues resolved</span></div>
+            <div class="proof-item"><strong>10+</strong><span>Enterprise databases supported</span></div>
+            <div class="proof-item"><strong>150+</strong><span>Engineering issues solved</span></div>
+            <div class="proof-item"><strong>~30%</strong><span>Query response-time improvement</span></div>
+            <div class="proof-item"><strong>40%</strong><span>Fewer customer-reported defects</span></div>
           </div>
         </div>
-        <aside class="hero-panel" aria-label="Current engineering focus">
-          <div class="panel-top"><span>NOW BUILDING</span><i class="fas fa-circle-notch"></i></div>
-          <h2>Intelligent data systems that stay reliable at scale.</h2>
+
+        <aside class="hero-panel" aria-label="Featured engineering work">
+          <div class="panel-top"><span>FEATURED WORK</span><span class="panel-status"><i class="fas fa-circle"></i> PRODUCTION</span></div>
+          <h2>Inside <span>Easy Answers.</span></h2>
+          <p class="panel-description">An AI-powered analytics platform where users ask questions in natural language and get meaningful insights from enterprise data.</p>
           <div class="signal-card">
-            <span class="signal-label">ENGINEERING FOCUS</span>
-            <ul>
-              <li><i class="fas fa-check"></i> Spring Boot services</li>
-              <li><i class="fas fa-check"></i> LLM-generated SQL</li>
-              <li><i class="fas fa-check"></i> Cross-database analytics</li>
-            </ul>
+            <div class="signal-row"><span class="signal-number">01</span><div><strong>LLM-generated queries</strong><small>Natural language → executable SQL</small></div></div>
+            <div class="signal-row"><span class="signal-number">02</span><div><strong>Apache Calcite</strong><small>AST transformation &amp; SQL dialect handling</small></div></div>
+            <div class="signal-row"><span class="signal-number">03</span><div><strong>10+ enterprise databases</strong><small>PostgreSQL · Oracle · BigQuery · Snowflake · Trino</small></div></[...]
           </div>
-          <p class="panel-foot">Java-first. Reliability-minded. Curious about what AI makes possible.</p>
+          <div class="panel-result"><span>ENGINEERING IMPACT</span><strong>~30% faster query response</strong></div>
         </aside>
       </div>
-      <div class="scroll-cue"><span></span> Scroll to see the story</div>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to see the story</a>
     </div>
   </header>
 
   <main>
     <section class="section page-shell about" id="about">
-      <div class="section-wrap">
-        <div class="section-kicker">01 — ABOUT</div>
-        <div class="about-lead">
-          <h2>Backend foundations.<br><span>Intelligent outcomes.</span></h2>
-          <p>I’m a Java backend engineer who enjoys the hard parts: making data accessible, APIs secure, and production systems calmer than they were yesterday.</p>
-        </div>
-        <div class="story-grid">
-          <article class="story-card story-feature">
-            <p class="card-eyebrow">THE STORY</p>
-            <h3>From solid Java services to data products people can ask questions of.</h3>
-            <p>At Easy Answers, I work on analytics experiences that translate natural-language questions into SQL. The work sits at the intersection of backend engineering and Generative AI: grou[...]
-            </p>
-          </article>
-          <article class="story-card story-detail">
-            <span class="card-number">01</span>
-            <h3>Designed for the real world</h3>
-            <p>Used Apache Calcite and Trino federation to support cross-source analytics, while focusing on the performance and reliability users actually feel.</p>
-          </article>
-          <article class="story-card story-detail">
-            <span class="card-number">02</span>
-            <h3>Measured improvement</h3>
-            <p>Improved query response time by about 30%, resolved 30+ critical production issues, and helped reduce defects by about 40%.</p>
-          </article>
-          <article class="story-card story-detail">
-            <span class="card-number">03</span>
-            <h3>Built with care</h3>
-            <p>Secure APIs with Spring Security and API key management, ontology inheritance, and tested code with JUnit and Mockito.</p>
-          </article>
-        </div>
+      <p class="section-kicker">01 — ABOUT</p>
+      <div class="about-lead">
+        <h2>Backend foundations.<br><span>Intelligent outcomes.</span></h2>
+        <p>I’m a <strong>Java Backend Engineer</strong> focused on the systems behind real products — APIs, microservices, data processing, security, and the engineering problems that appear w[...]
+        </p>
+      </div>
+      <div class="story-grid">
+        <article class="story-card story-feature"><p class="card-eyebrow">THE WORK I’M MOST PROUD OF</p><h3>Building the backend behind <span>Easy Answers.</span></h3><p>Easy Answers is an AI-po[...]
+        </article>
+        <article class="story-card story-detail"><span class="card-number">01</span><h3>Designed for real data</h3><p>Worked with Apache Calcite and Trino federation to handle complex SQL transfor[...]
+        </article>
+        <article class="story-card story-detail"><span class="card-number">02</span><h3>Performance that matters</h3><p>Optimized query processing and cross-database execution, contributing to aro[...]
+        </article>
+        <article class="story-card story-detail"><span class="card-number">03</span><h3>Production problem solving</h3><p>Investigated SQL dialect, type-coercion, CTE, UNION, and database-specific[...]
+        </article>
+      </div>
 
-        <div class="section-heading built-heading">
-          <div><p class="section-kicker">02 — SELECTED WORK</p><h2>What I’ve <span>built.</span></h2></div>
-          <p>Practical engineering across data platforms, security, and production quality.</p>
-        </div>
+      <div class="section-heading built-heading"><div><p class="section-kicker">02 — SELECTED WORK</p><h2>What I’ve <span>built.</span></h2></div><p>Real backend problems I’ve worked on acro[...]
+      </div>
 
-        <div class="project-grid">
-          <article class="project-card project-primary"><span class="project-index">01</span><div class="project-icon"><i class="fas fa-database"></i></div><h3>Easy Answers analytics</h3><p>An AI-assisted analytics experience for turning questions into database-aware insights across 10+ data sources.</p></article>
-          <article class="project-card"><span class="project-index">02</span><div class="project-icon"><i class="fas fa-shield-alt"></i></div><h3>Secure backend foundations</h3><p>Spring Boot APIs built with Spring Security and API key management for controlled, dependable access.</p></article>
-          <article class="project-card"><span class="project-index">03</span><div class="project-icon"><i class="fas fa-wave-square"></i></div><h3>Production reliability</h3><p>Performance tuning, critical-issue resolution, and quality practices that made services more responsive and stable.</p></article>
-        </div>
+      <div class="project-grid">
+        <article class="project-card project-primary"><span class="project-index">01</span><div class="project-icon"><i class="fas fa-database"></i></div><h3>Easy Answers analytics</h3><p>An AI-assisted analytics experience for turning questions into database-aware insights across 10+ data sources.</p></article>
+        <article class="project-card"><span class="project-index">02</span><div class="project-icon"><i class="fas fa-shield-alt"></i></div><h3>Secure backend foundations</h3><p>Spring Boot APIs built with Spring Security and API key management for controlled, dependable access.</p></article>
+        <article class="project-card"><span class="project-index">03</span><div class="project-icon"><i class="fas fa-wave-square"></i></div><h3>Production reliability</h3><p>Performance tuning, critical-issue resolution, and quality practices that made services more responsive and stable.</p></article>
+      </div>
 
-        <div class="focus-section">
-          <div class="section-heading"><div><p class="section-kicker">03 — TECHNICAL FOCUS</p><h2>Tools with <span>purpose.</span></h2></div></div>
-          <div class="focus-grid">
-            <div class="focus-row"><p>Backend</p><div class="chips"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>Spring Security</span><span>API Key Management</span></div></div>
-            <div class="focus-row"><p>Data &amp; AI</p><div class="chips"><span>LLM-generated SQL</span><span>Apache Calcite</span><span>Trino Federation</span><span>10+ Databases</span><span>Ontology Inheritance</span></div></div>
-            <div class="focus-row"><p>Quality</p><div class="chips"><span>JUnit</span><span>Mockito</span><span>Production Debugging</span><span>Copilot</span><span>Cursor</span><span>Claude Code</span></div></div>
-          </div>
-        </div>
-
-        <div class="timeline-section">
-          <div class="section-heading"><div><p class="section-kicker">04 — PATH</p><h2>My <span>timeline.</span></h2></div></div>
-          <div class="timeline">
-            <article class="timeline-item"><span class="timeline-marker"></span><p class="timeline-type">EDUCATION</p><h3>B.E. in Computer Science &amp; Engineering</h3><p>Sapthagiri College of Engineering</p></article>
-            <article class="timeline-item"><span class="timeline-marker"></span><p class="timeline-type">EARLY EXPERIENCE</p><h3>Full Stack Intern</h3><p>Alnitak Solutions — contributed to Java, React, and MySQL website delivery.</p></article>
-            <article class="timeline-item"><span class="timeline-marker"></span><p class="timeline-type">APPORCHID INDIA</p><h3>Associate Software Engineer</h3><p>Built Java and Spring Boot services while developing experience in production support and backend delivery.</p></article>
-            <article class="timeline-item"><span class="timeline-marker"></span><p class="timeline-type">APPORCHID INDIA</p><h3>Software Engineer</h3><p>Building reliable AI-powered analytics and backend systems with a focus on data access, performance, and quality.</p></article>
-          </div>
+      <div class="focus-section">
+        <div class="section-heading"><div><p class="section-kicker">03 — TECHNICAL FOCUS</p><h2>Tools with <span>purpose.</span></h2></div></div>
+        <div class="focus-grid">
+          <div class="focus-row"><p>BACKEND</p><div class="chips"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>Spring Security</span><span>API Key Management</span></div></div>
+          <div class="focus-row"><p>DATA &amp; AI</p><div class="chips"><span>LLM-generated SQL</span><span>Apache Calcite</span><span>Trino Federation</span><span>10+ Databases</span><span>Ontology Inheritance</span></div></div>
+          <div class="focus-row"><p>Quality</p><div class="chips"><span>JUnit</span><span>Mockito</span><span>Production Debugging</span><span>Copilot</span><span>Cursor</span><span>Claude Code</span></div></div>
         </div>
       </div>
-    </section>
 
-    <section class="contact section" id="contact">
-      <div class="page-shell">
-        <p class="section-kicker">05 — CONTACT</p>
-        <div class="contact-lead"><h2>Let’s build something <span>meaningful.</span></h2>
-        <p>Interested in dependable backend systems, AI-powered products, or data-platform engineering? I’d be glad to connect.</p></div>
-        <div class="contact-grid">
-          <a class="contact-card contact-email" href="mailto:pramodpatil0981@gmail.com"><i class="fas fa-envelope"></i><div><span>EMAIL</span><strong>pramodpatil0981@gmail.com</strong><small>Start a conversation <i class="fas fa-arrow-up"></i></small></div></a>
-          <a class="contact-card" href="https://www.linkedin.com/in/pramod-patil-799934229" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i><div><span>LINKEDIN</span><strong>Connect professionally</strong><small>View profile <i class="fas fa-arrow-up"></i></small></div></a>
-          <a class="contact-card" href="https://github.com/pramod19281928" target="_blank" rel="noopener"><i class="fab fa-github"></i><div><span>GITHUB</span><strong>See my code</strong><small>Open GitHub <i class="fas fa-arrow-up"></i></small></div></a>
-          <a class="contact-card" href="assets/cv/Pramod_Patil_JavaBackend.pdf" download><i class="fas fa-file-arrow-down"></i><div><span>CV / RESUME</span><strong>Download my resume</strong><small>PDF document <i class="fas fa-arrow-down"></i></small></div></a>
+      <div class="timeline-section">
+        <div class="section-heading"><div><p class="section-kicker">04 — PATH</p><h2>My <span>timeline.</span></h2></div></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-marker"></span><p class="timeline-type">EDUCATION</p><h3>B.E. in Computer Science &amp; Engineering</h3><p>Sapthagiri College of Engineering</p></article>
+          <article class="timeline-item"><span class="timeline-marker"></span><p class="timeline-type">EARLY EXPERIENCE</p><h3>Full Stack Intern</h3><p>Alnitak Solutions — contributed to Java, React, and MySQL website delivery.</p></article>
+          <article class="timeline-item"><span class="timeline-marker"></span><p class="timeline-type">APPORCHID INDIA</p><h3>Associate Software Engineer</h3><p>Built Java and Spring Boot services while developing experience in production support and backend delivery.</p></article>
+          <article class="timeline-item"><span class="timeline-marker"></span><p class="timeline-type">APPORCHID INDIA</p><h3>Software Engineer</h3><p>Building reliable AI-powered analytics and backend systems with a focus on data access, performance, and quality.</p></article>
         </div>
       </div>
-    </section>
-  </main>
-  <script src="app.js"></script>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="page-shell">
+      <p class="section-kicker">05 — CONTACT</p>
+      <div class="contact-lead"><h2>Let’s build something <span>meaningful.</span></h2>
+      <p>Interested in dependable backend systems, AI-powered products, or data-platform engineering? I’d be glad to connect.</p></div>
+      <div class="contact-grid">
+        <a class="contact-card contact-email" href="mailto:pramodpatil0981@gmail.com"><i class="fas fa-envelope"></i><div><span>EMAIL</span><strong>pramodpatil0981@gmail.com</strong><small>Start a conversation <i class="fas fa-arrow-up"></i></small></div></a>
+        <a class="contact-card" href="https://www.linkedin.com/in/pramod-patil-799934229" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i><div><span>LINKEDIN</span><strong>Connect professionally</strong><small>View profile <i class="fas fa-arrow-up"></i></small></div></a>
+        <a class="contact-card" href="https://github.com/pramod19281928" target="_blank" rel="noopener"><i class="fab fa-github"></i><div><span>GITHUB</span><strong>See my code</strong><small>Open GitHub <i class="fas fa-arrow-up"></i></small></div></a>
+        <a class="contact-card" href="assets/cv/Pramod_Patil_JavaBackend.pdf" download><i class="fas fa-file-arrow-down"></i><div><span>CV / RESUME</span><strong>Download my resume</strong><small>PDF document <i class="fas fa-arrow-down"></i></small></div></a>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="app.js"></script>
 </body>
 </html>
