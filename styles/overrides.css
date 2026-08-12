@@ -1,0 +1,49 @@
+:root{
+  --override-gap: 18px;
+}
+
+/* Small safe overrides to restore layout when wrapper classes changed */
+.page-shell, .hero, .section {
+  box-sizing: border-box;
+}
+
+/* Ensure alternate wrappers behave like original layout hooks */
+.container.header, .container.header.active, .container.about {
+  display: block;
+  width: 100%;
+}
+.container.header > .hero-shell, .container.about > .section-wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 28px 18px;
+}
+
+/* Project / timeline adjustments */
+.project-grid {
+  gap: var(--override-gap);
+  align-items: start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.timeline {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Contact CV anchor visibility */
+.contact-grid {
+  gap: 12px;
+}
+.contact-card[download] {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Mobile fallback */
+@media (max-width: 760px) {
+  .project-grid { grid-template-columns: 1fr; }
+  .timeline { grid-template-columns: 1fr; }
+  .page-shell { padding: 24px; }
+}
